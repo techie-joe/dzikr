@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Dzikr
- * @version 1.0.1
+ * @version 1.0.0
  */
 /*
 Plugin Name: Dzikr
 Plugin URI: https://github.com/techie-joe/dzikr
 Description: This plugin symbolizes hope and enthusiasm of an entire human kind.
 Author: Techie Joe
-Version: 0.0.1
+Version: 1.0.0
 Author URI: https://techie-joe.github.io/
 */
 
