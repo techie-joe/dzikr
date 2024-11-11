@@ -8,8 +8,9 @@ Plugin Name: Dzikr
 Plugin URI: https://github.com/techie-joe/dzikr
 Description: This plugin symbolizes hope and enthusiasm of an entire human kind.
 Author: Techie Joe
-Version: 1.0.0
 Author URI: https://techie-joe.github.io/
+Version: 1.0.0
+License: GPLv2 or later
 */
 
 function get_kalima() {
