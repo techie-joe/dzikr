@@ -51,8 +51,8 @@ function dzikr() {
 	}
 
 	printf(
-		esc_html('<p id="dzikr"><span class="screen-reader-text">%s</span><span dir="rtl" lang="%s">%s</span></p>'),
-		esc_html('Dzikr by Techie Joe'),
+		'<p id="dzikr"><span class="screen-reader-text">%s</span><span dir="rtl" lang="%s">%s</span></p>',
+		'Dzikr by Techie Joe',
 		esc_html($lang),
 		esc_html($chosen)
 	);
