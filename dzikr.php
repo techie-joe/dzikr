@@ -39,7 +39,7 @@ $kalima = "
 	$kalima = explode( "\n", $kalima );
 
 	// randomly choose a line.
-	return wptexturize( $kalima[ mt_rand( 0, count( $kalima ) - 1 ) ] );
+	return wptexturize( $kalima[ wp_rand( 0, count( $kalima ) - 1 ) ] );
 }
 
 // echoes the chosen line
@@ -47,14 +47,14 @@ function dzikr() {
 	$chosen = get_kalima();
 	$lang   = '';
 	if ( 'ar_' !== substr( get_user_locale(), 0, 3 ) ) {
-		$lang = ' lang="ar"';
+		$lang = 'ar';
 	}
 
 	printf(
-		'<p id="dzikr"><span class="screen-reader-text">%s </span><span dir="rtl"%s>%s</span></p>',
-		__( 'Dzikr by Techie Joe', 'dzikr' ),
-		$lang,
-		$chosen
+		esc_html('<p id="dzikr"><span class="screen-reader-text">%s</span><span dir="rtl" lang="%s">%s</span></p>'),
+		esc_html('Dzikr by Techie Joe'),
+		esc_html($lang),
+		esc_html($chosen)
 	);
 }
 
